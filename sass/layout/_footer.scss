@@ -1,0 +1,75 @@
+.footer {
+    background: $primary-blue;
+    padding: 4rem;
+    color: $color-white;
+    font-size: initial;
+    
+    &__heading {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        @include respond(md) { margin-bottom: .5rem; }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+
+        @include respond(md) { margin-bottom: 1.5rem; }
+    }
+    
+    &__link {
+        position: relative;
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        transition: all .3s ease;
+        
+        &:not(:last-child) {
+            margin-right: 2.3rem;
+        }
+
+        &:link,
+        &:visited {
+            color: $color-white;
+        }
+
+        &:hover {
+            border: 1px solid $color-white;
+        }
+
+        i {
+            @include abs-center;            
+        }
+        
+        &--fb {
+            background: #2e3192;
+        }
+        
+        &--tt {
+            background: #00aeef;
+        }
+        
+        &--yt {
+            background: #ed3123;
+        }
+        
+        &--pin {
+            background: #c8232c;
+        }
+
+    }
+
+    &__newsletter-form {
+        margin-top: 4rem;
+        float: right;
+
+        @include respond(md) { float: none; }
+    }
+
+    .newsletter-label {
+        color: $primary-green;
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+
+}
